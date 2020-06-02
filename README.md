@@ -17,6 +17,15 @@ Input devices used:
 
 * Intel Realsense SR300
 
+Grasshopper Plugins
+-------------------
+The following plugins are used across the project:
+- Firefly (OSC Listener)
+- GHowl (UDP Communication)
+- Heteroptera (Stream Smoothing)
+- Telepathy (Wireless Connections)
+- Yellow (Voxel Editing)
+
 Setup
 -----
 There are three main software parts:
@@ -26,5 +35,11 @@ There are three main software parts:
 
 All three components are required to be running. The only order that matters is that the OSCMiddleware script must be restarted after a Grasshopper file has been loaded. 
 
-Use
----
+Examples and Demo
+-----------------
+
+Included are several Grasshopper files demonstrating the technology and the final workflow:
+* example_phone_imu : Pointer control and object selection using mobile device IMU orientation
+* example_camera_rotation : Example control of rotating a scene using a simple grasping gesture
+* example_camera_sculpting : Example editing of a simple voxel scene using several gestures
+* fluxsight_demo : Demonstration file of the entire workflow including database comparison and solar analysis
