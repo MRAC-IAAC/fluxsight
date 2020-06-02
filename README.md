@@ -1,6 +1,6 @@
 FluxSight
 =========
-
+![logo](images/landscape.jpg)
 FluxSight is an exploration of non-standard interface methods for sketching design concepts with Rhino and Grasshopper.   
 
 Background
