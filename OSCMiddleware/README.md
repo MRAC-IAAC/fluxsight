@@ -1,6 +1,6 @@
 This is Processing utility program to get around a seeming issue in Grasshopper's UDP implementation. When receving a constant stream of OSC input, and when downstream execution takes a significant amount of time (>200 ms though this has since been improved), some messages apparently get dropped.   
 Instead of GH receiving a single message whenever a gesture fires, this utility now receives those messages first and keeps track of the ms timing of each gesture's most recent firing. It then passes this whole record to GH each frame.   
-GH, meanwhile, keeps a list of the most recent firing it has execute for each gesture. If the current frame's OSC data informs it of a more recent firing, only then will it execute this gesture internally and update its record.   
-For this reason, this sketch must be started after the GH file is loaded, so GH can sync against the difference in each programs internal timers.   
+GH, meanwhile, keeps a list of the most recent firing it has execute for each gesture. If the current frame's OSC data informs it of a more recent firing, only then will it execute this gesture internally and update its record. This will still sometimes miss gesture firings that occur very close together, but as in our applications new gestures are made often entire seconds apart, this is an acceptable tradeoff.      
+Be aware that this sketch must be started after the GH file is loaded, so GH can sync against the difference in each programs internal timers.   
 
 This functionality could probably have been added to the C++ program itself, but implementing it like this was quicker. 
