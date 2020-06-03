@@ -21,11 +21,11 @@ Input devices used:
 Grasshopper Plugins
 -------------------
 The following plugins are used across the project:
-- Firefly (OSC Listener)
-- GHowl (UDP Communication)
-- Heteroptera (Stream Smoothing)
-- Telepathy (Wireless Connections)
-- Yellow (Voxel Editing)
+- Firefly, GHowl, Heteroptera : Streaming and Network Input
+- Human : GUI
+- Sunflower : Solar Analysis
+- Telepathy : Script Organization
+- Yellow : Voxel Editing
 
 Setup
 -----
